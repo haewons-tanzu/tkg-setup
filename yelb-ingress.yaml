@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: yelb-ingress
+spec:
+  rules:
+  - host: "yelb.tkg.dev.demo"
+    http:
+      paths:
+      - path: 
+        backend:
+          serviceName: yelb-ui
+          servicePort: 80
