@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euxo pipefail
-tdnf update -y
-tdnf install -y ca-certificates
-tdnf install -y openssl-c_rehash
+#tdnf update -y
+#tdnf install -y ca-certificates
+#tdnf install -y openssl-c_rehash
 TRUSTED_CERT="-----BEGIN CERTIFICATE-----
 MIIF4zCCA8ugAwIBAgIUFGm1lRN8maxz6oPzk+iiCHLKBAowDQYJKoZIhvcNAQEN
 BQAwbDELMAkGA1UEBhMCS1IxDjAMBgNVBAgMBVNlb3VsMQ4wDAYDVQQHDAVTZW91
