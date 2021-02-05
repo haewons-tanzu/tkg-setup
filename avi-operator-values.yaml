@@ -54,7 +54,7 @@ L4Settings:
 ### This section outlines settings on the Avi controller that affects AKO's functionality.
 ControllerSettings:
   serviceEngineGroupName: "Default-Group" # Name of the ServiceEngine Group.
-  controllerVersion: "18.2.10" # The controller API version
+  controllerVersion: "20.1.2" # The controller API version
   cloudName: "Default-Cloud" # The configured cloud name on the Avi controller.
   controllerHost: "" # IP address or Hostname of Avi Controller
   tenantsPerCluster: "false" # If set to true, AKO will map each kubernetes cluster uniquely to a tenant in Avi
@@ -84,7 +84,7 @@ avicredentials:
   certificateAuthorityData: # optional - used for controller identity verification
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
 
 persistentVolumeClaim: ""
