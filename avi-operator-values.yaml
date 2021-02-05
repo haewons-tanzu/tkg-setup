@@ -84,7 +84,7 @@ avicredentials:
   certificateAuthorityData: # optional - used for controller identity verification
 
 service:
-  type: NodePort
+  type: NodePort # Default: ClusterIP
   port: 80
 
 persistentVolumeClaim: ""
